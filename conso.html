@@ -1,0 +1,35 @@
+
+<ion-view title="Consommation" >
+
+  <ion-content ng-controller="consoCtrl">
+    <ion-scroll zooming="true" direction="xy" style="width: 100%; height: 700px">
+    <div class="row">
+    <button class="button button-positive periode col-33">
+      Jour
+    </button>
+      <button class="button button-positive periode col-33">
+        Trimestre
+      </button>
+      <button class="button button-positive periode col-33">
+        Année
+      </button>
+    </div>
+    <div class="card">
+      <div class="item item-divider">
+        A line chart
+      </div>
+      <div class="item item-text-wrap">
+        <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" options="{showTooltips: false}"></canvas>
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">
+        A bar chart
+      </div>
+      <div class="item item-text-wrap">
+        <canvas id="bar" class="chart chart-bar" data="data" labels="labels" legend="true" series="series" options="{showTooltips: false}"></canvas>
+      </div>
+    </div>
+    </ion-scroll>
+  </ion-content>
+</ion-view>
